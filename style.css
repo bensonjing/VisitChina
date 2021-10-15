@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(./images/main3.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    padding: 1% 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+  text-decoration: none;
+  color: white;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 80%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+.text-box h1{
+    font-weight: 600;
+    font-size: 170px;
+    line-height: 1;
+}
+
+.cities{
+  background: black; 
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+h2{
+  color: white;
+  font-size: 50px;
+  font-weight: 600;
+  margin: 80px 0 120px 0;
+}
+.row{
+  width: 80%;
+  margin-top: 5%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row a{
+  text-decoration: none;
+  color: white;
+  height:400px;
+  flex-basis: 22%;
+  margin: auto;
+  margin-bottom: 10%;
+  padding 20px 12px;
+  box-sizing: border-box;
+  transition: .5s;
+}
+.row a:hover{
+  transform: scale(1.05);
+}
+#beijing{
+  background-image: url("./images/beijing1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#shanghai{
+  background-image: url("./images/shanghai1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#chongqing{
+  background-image: url("./images/chongqing1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#tibet{
+  background-image: url("./images/xizang1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.row a:hover{
+  box-shadow: 5px 0 10px 0px rgba(0, 0, 0, 0.7);
+}
+
+/* CITIES */
+.sub-header{
+    min-height: 100vh;
+    width: 100%;
+    background: black;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.sub-text-box{
+  color: white;
+  background: black;
+  width: 30%;
+  height: 500px;
+  float: right;
+  margin-right: 10%;
+  padding: 2%;
+  padding-top: 30vh;
+  text-align: center;
+}
+.sub-text-box h1{
+  font-size: 100px;
+  padding-bottom: 10vh;
+}
+.picture{
+  background: black;
+  width: 45%;
+  height: 792px;
+  float: left;
+  margin-left: 10%;
+}
+img{
+  width: 100%;
+  height: 95%;
+  object-fit: cover;
+}
